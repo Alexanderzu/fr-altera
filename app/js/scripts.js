@@ -3,6 +3,7 @@
 	//= parts/owl.carousel.min.js
 	//= parts/jquery.maskedinput.min.js
 	//= parts/fotorama.js
+	//= parts/bootstrap.min.js
 
 	$(document).ready(function () {
 
@@ -86,7 +87,7 @@
 
 
 	    $(window).scroll(function () {
-	        var scrollPos = $('body').scrollTop();
+	        var scrollPos = $(window).scrollTop();
 	        if (scrollPos > 0) {
 	            $('.navbar').addClass('show-color');
 	            $('.scrollTop').addClass('show-button');
@@ -102,11 +103,11 @@
 
 	    owl.owlCarousel({
 	        items: 1, //10 items above 1000px browser width
-	     	 itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
-            singleItem:true,
-            //Pagination
-    pagination : true,
-    paginationNumbers: false
+	        itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+	        singleItem: true,
+	        //Pagination
+	        pagination: true,
+	        paginationNumbers: false
 	    });
 
 	    // Custom Navigation Events
@@ -116,7 +117,7 @@
 	    $(".prev").click(function () {
 	        owl.trigger('owl.prev');
 	    })
-	
+
 
 
 	}); //document
