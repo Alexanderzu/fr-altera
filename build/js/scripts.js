@@ -560,7 +560,7 @@
 
 	            // Store hash (#)
 	            var hash = this.hash;
-
+                var ths = $(this);
 	            // Ensure no section has relevant class
 	            $('section').removeClass("focus");
 
@@ -576,10 +576,11 @@
 	            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
 	            $('html, body').animate({
 	                scrollTop: $(hash).offset().top - 69
+//                    scrollTop: $($(ths).attr("href")).offset().top - 69
 	            }, 600, function () {
 
 	                // Add hash (#) to URL when done scrolling (default click behavior)
-	                window.location.hash = hash;
+//	                window.location.hash = hash;
 	            });
 
 	            // Collapse Navbar for mobile view
