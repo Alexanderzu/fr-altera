@@ -1,0 +1,25 @@
+=respond($device)
+
+    @if $device == sm
+        @media only screen and (min-width: 480px)
+            @content
+                
+    @if $device == kp
+        @media only screen and (min-width: 600px)
+            @content
+            
+    @if $device == md
+        @media only screen and (min-width: 768px)
+            @content
+                
+    @if $device == lg
+        @media only screen and (min-width: 992px)
+            @content
+            
+    @if $device == ls
+        @media only screen and (min-width: 1024px)
+            @content
+
+    @if $device == xl
+        @media only screen and (min-width: 1200px)
+            @content

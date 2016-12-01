@@ -1,0 +1,27 @@
+$blue: #2b8bca
+$grey: #c8c8c8
+$green: #51c109
+$base: #4a4a4a
+$red: #d0021b
+
+
+$purple: #7354c0
+$lblue: #67a2f5
+$yellow: #FFEE58
+$orange: #FFA726
+$dgrey: #666666
+
+=absolute($top, $left, $right, $bottom)
+    position: absolute
+    top: $top
+    left: $left
+    right: $right
+    bottom: $bottom
+
+=translate($x,$y)
+    -webkit-transform: translate($x,$y)
+    -webkit-transform: translate3d($x,$y,0)
+    -ms-transform: translate($x,$y)
+    -ms-transform: translate3d($x,$y,0)
+    transform: translate($x,$y)
+    transform: translate3d($x,$y,0)
