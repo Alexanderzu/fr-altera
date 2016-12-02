@@ -7274,7 +7274,7 @@ section {
 }
 
 #AllCompany .video {
-  max-width: 850px;
+  max-width: 460px;
   margin: 0 auto;
 }
 
@@ -7368,12 +7368,14 @@ section {
   text-align: center;
   display: block;
   margin: 0 auto;
+  color: #fff;
 }
 
 .form__header h5,.form__header .h5 {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 40px;
+  color: #272727;
 }
 
 .form__btn {
@@ -7392,6 +7394,14 @@ section {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.form__btn:hover {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
 }
 
 .form__btn-blue {
@@ -7476,6 +7486,42 @@ section {
   font-size: 14px;
   line-height: 22px;
   margin-top: 20px;
+}
+
+.video__play::before,.video__play::after {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+  border: #fff solid 2px;
+  -webkit-border-radius: 9999px;
+  border-radius: 9999px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: ' ';
+  height: 140%;
+  left: -20%;
+  opacity: .6;
+  position: absolute;
+  top: -20%;
+  -webkit-transform: scale(0.714);
+  -ms-transform: scale(0.714);
+  transform: scale(0.714);
+  width: 140%;
+  z-index: 1;
+}
+
+.video__play::after {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.video__play:hover::before,.video__play:hover::after {
+  -webkit-animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+  animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+}
+
+.video__play:hover::after {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
 
 .owl-pagination {
@@ -7583,6 +7629,10 @@ use styles below to disable ugly selection .customNavigation a {
   background: rgba(255, 255, 255, 0.62);
 }
 
+.packagefr__block-item {
+  margin-bottom: 35px;
+}
+
 #progressfr {
   padding: 0;
   color: #fff;
@@ -7600,7 +7650,14 @@ use styles below to disable ugly selection .customNavigation a {
   background-color: rgba(41, 139, 202, 0.85);
 }
 
+#progressfr .progressfr__block-border {
+  border-bottom: 1px solid #fff;
+  max-width: 880px;
+  margin: 40px auto 0px;
+}
+
 #progressfr .progressfr__item {
+  position: relative;
   max-width: 245px;
   margin: 0 auto;
   padding: 20px 0px;
@@ -7612,9 +7669,30 @@ use styles below to disable ugly selection .customNavigation a {
   margin-top: 35px;
 }
 
+#progressfr .progressfr__item:before {
+  content: " ";
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #fff;
+}
+
+#progressfr .progressfr__item-depart {
+  color: #2b8bca;
+}
+
 #progressfr .progressfr__item-main {
   color: #2b8bca;
   padding: 4px 0;
+  margin-bottom: 40px;
+}
+
+#progressfr .progressfr__item-main:before {
+  top: 118px;
+  height: 40px;
 }
 
 #progressfr .progressfr__item-main #logo {
@@ -7633,7 +7711,7 @@ use styles below to disable ugly selection .customNavigation a {
 
 #steps .step {
   background-color: #f5f6f8;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   height: 150px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -7759,6 +7837,8 @@ use styles below to disable ugly selection .customNavigation a {
 .masha {
   position: relative;
   bottom: -55px;
+  width: 230px;
+  margin-top: -53px;
 }
 
 .slider-item {
@@ -7776,7 +7856,7 @@ use styles below to disable ugly selection .customNavigation a {
 
 a.btn.next,a.btn.prev {
   position: absolute;
-  top: 40%;
+  top: 38%;
   font-size: 30px;
 }
 
@@ -7811,6 +7891,57 @@ a.btn.prev {
   margin-top: 25px;
   color: #fff;
   text-align: center;
+}
+
+.quest_tip {
+  cursor: pointer;
+}
+
+.quest_tip .packagefr__block-item {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #141414;
+}
+
+.quest_tip .packagefr__block-item:hover {
+  color: #2b8bca;
+  border-bottom: 1px dotted #2b8bca;
+}
+
+.mytooltip_text {
+  display: none;
+}
+
+body > .mytooltip {
+  position: absolute;
+  display: none;
+  width: 225px;
+  padding: 15px 30px;
+  background: white;
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+  z-index: 99999;
+}
+
+body > .mytooltip li {
+  margin-bottom: 5px;
+}
+
+.fotorama__arr--prev {
+  left: 30px;
+}
+
+.fotorama__arr--next {
+  right: 30px;
+}
+
+.fotorama__fullscreen-icon {
+  top: 12px;
+  right: 12px;
 }
 
 @font-face {
@@ -9029,6 +9160,101 @@ a.btn.prev {
   }
 }
 
+@media (max-width: 1024px) {
+  ul.navbar-nav > li > a {
+    font-size: 12px;
+    padding: 25px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.navbar-nav > li > a {
+    color: #337ab7;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: #e5e4ea;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+  }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .navbar-nav > li {
+    margin-bottom: 0;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding: 10px 5px !important;
+  }
+
+  .collapse.in {
+    display: block !important;
+  }
+
+  .navbar-default {
+    height: auto;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    width: 100%;
+  }
+
+  .navbar-nav_logo {
+    display: none !important;
+  }
+
+  .home--block {
+    padding-top: 10vh;
+  }
+
+  .home--block_img .max {
+    display: none;
+  }
+
+  .home--block_subtitle {
+    margin-top: 20px;
+  }
+
+  .home--block_author {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
@@ -9341,5 +9567,65 @@ a.btn.prev {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cycle-colors {
+  0% {
+    border-color: red;
+  }
+
+  25% {
+    border-color: #80ff00;
+  }
+
+  50% {
+    border-color: cyan;
+  }
+
+  75% {
+    border-color: #8000ff;
+  }
+
+  100% {
+    border-color: red;
+  }
+}
+
+@keyframes cycle-colors {
+  0% {
+    border-color: red;
+  }
+
+  25% {
+    border-color: #80ff00;
+  }
+
+  50% {
+    border-color: cyan;
+  }
+
+  75% {
+    border-color: #8000ff;
+  }
+
+  100% {
+    border-color: red;
+  }
+}
+
+@-webkit-keyframes pulse {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
   }
 }

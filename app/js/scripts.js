@@ -6,10 +6,59 @@
 	//= parts/bootstrap.min.js
 
 	$(document).ready(function () {
+        
+        
+           questionmytooltip();
+
+	    function questionmytooltip() {
+	        if ($('body > .mytooltip').length == 0) {
+	            $('body').append('<div class="mytooltip"></div>')
+	        };
+
+	        $('body').on('mouseenter', '.quest_tip', function (ev) {
+
+	            var mytooltipContent = $(this).find('.mytooltip_text').html();
+	            var leftPos = ev.pageX - 5;
+	            if ($(this).data('direction') == 'ltr') {
+	                leftPos = ev.pageX - 0;
+	            }
+
+	            if (mytooltipContent) {
+	                $('.mytooltip').css({
+	                    display: 'block',
+	                    left: leftPos,
+	                    top: ev.pageY - 100
+	                }).html(mytooltipContent);
+
+	                $('body').on('mousemove', '.quest_tip', function (ev) {
+	                    if ($(this).data('direction') == 'ltr') {
+	                        leftPos = ev.pageX - 0;
+	                    } else {
+	                        leftPos = ev.pageX - 305;
+	                    }
+	                    $('.mytooltip').css({
+	                        left: leftPos,
+	                        top: ev.pageY - 100
+	                    });
+	                });
+	            };
+	        }).on('mouseleave', '.quest_tip', function () {
+	            $('.mytooltip').css({
+	                display: 'none',
+	                left: 0,
+	                top: 0
+	            }).html('');
+	            $('body').off('mousemove');
+	        });
+	    };
+        
 
 	    $('.input--phone').mask("+7 (999) 999-99-99", {
 	        autoclear: false
 	    });
+
+	 
+
 
 	    $('.hamburger-menu').on('click', function () {
 	        $('.bar').toggleClass('animate');
@@ -53,7 +102,7 @@
 
 	            // Store hash (#)
 	            var hash = this.hash;
-                var ths = $(this);
+	            var ths = $(this);
 	            // Ensure no section has relevant class
 	            $('section').removeClass("focus");
 
@@ -69,11 +118,11 @@
 	            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
 	            $('html, body').animate({
 	                scrollTop: $(hash).offset().top - 69
-//                    scrollTop: $($(ths).attr("href")).offset().top - 69
+	                    //                    scrollTop: $($(ths).attr("href")).offset().top - 69
 	            }, 600, function () {
 
 	                // Add hash (#) to URL when done scrolling (default click behavior)
-//	                window.location.hash = hash;
+	                //	                window.location.hash = hash;
 	            });
 
 	            // Collapse Navbar for mobile view
