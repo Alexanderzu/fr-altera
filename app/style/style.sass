@@ -30,6 +30,10 @@ nav.navbar
     background: $background-menu
     +respond(lg)
             background: transparent
+        
+    a
+        &:focus
+            background-color: rgba(204, 204, 204, 0) !important
     
     // Class based state
     &.show-color
@@ -568,9 +572,6 @@ use styles below to disable ugly selection .customNavigation a
         size: cover
         position: center bottom
         attachment: fixed
-
-    .section__header
-        color: #fff
     .costof
         &__block
             background-color: rgba(63, 64, 75, 0.9)
@@ -604,7 +605,6 @@ use styles below to disable ugly selection .customNavigation a
         attachment: fixed
         
     .section__header
-        color: #fff
         margin-bottom: 0px
         
     .progressfr
@@ -722,8 +722,8 @@ use styles below to disable ugly selection .customNavigation a
         margin-bottom: 55px
         &__play
             top: 35%
-            
     &--text
+        margin-bottom: 50px
         .media
             margin-top: 50px !important
             
@@ -773,6 +773,7 @@ a.btn.prev
 .footer
     padding: 40px 0px
     background: #ccc
+    color: #fff
     &__logo
         img
             margin-top: 20px
