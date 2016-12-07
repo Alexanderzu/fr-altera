@@ -19,6 +19,9 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/scripts.js"></script>
+
+
+
     <title>--</title>
 
 </head>
@@ -26,7 +29,7 @@
 
 
 <body data-spy="scroll" data-target="#scroll-spy">
-<!--
+    <!--
 <div class="avatar">
   <img src="http://lorempixel.com/400/400/cats/">
 </div>
@@ -201,8 +204,8 @@
                 </div>
 
                 <div class="customNavigation">
-                    <a class="btn prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-                    <a class="btn next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <a class="btn prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a class="btn next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
 
             </div>
@@ -313,13 +316,18 @@
                                 <h5>Полный расчет прибыли <br>
 для вашего города</h5>
                             </div>
-                            <input type="text" class="form__input" name="firstName" placeholder="Введите имя" required>
 
-                            <input type="text" class="form__input" name="email" placeholder="Ваш e-mail" required>
 
-                            <input type="text" class="form__input" name="phone" placeholder="Ваш телефон" required>
+                            <div class="selects">
+                                <select id="editable-select" required placeholder="Выберите город из списка">
+                                    <option>Город</option>
+                                    <option>Сказка</option>
+                                    <option>мечта</option>
+                                    <option>Земфира</option>
+                                </select>
 
-                            <input class="form__btn" type="submit" value="Оставить заявку">
+                            </div>
+                            <input class="form__btn submit_select" type="submit" value="Оставить заявку">
 
                         </form>
                     </div>
@@ -330,7 +338,24 @@
         </div>
     </section>
     <!-- /#costof -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <form class="form">
+                    <div class="section__header">
+                        <h4>Расчет прибыли</h4>
+                    </div>
+                    <p class="modal-p">Укажите Ваш E-mail и мы отправим
+                        <br> документ с подробным расчетом</p>
+                    <input type="text" class="form__input" name="email" placeholder="Ваш e-mail" required>
 
+                    <input class="form__btn" type="submit" value="Получить расчет">
+
+                </form>
+            </div>
+        </div>
+    </div>
 
     <section id="packagefr" class="packagefr">
         <div class="container">
@@ -343,8 +368,10 @@
             <div class="packagefr__block">
                 <div class="row">
                     <div class="col-md-4">
+<!--
 
                         <div class="packagefr__block-item">Эксклюзивное представительство в городе открытия </div>
+-->
 
                         <div class="quest_tip text_blue" data-direction="ltr">
                             <div class="packagefr__block-item">
@@ -398,9 +425,11 @@
 
 
                     <div class="col-md-4">
+<!--
                         <div class="packagefr__block-item">
                             Стажировка Франчайзи с ТОП-менеджерами компании и лучшими Бизнес-брокерами
                         </div>
+-->
 
                         <div class="quest_tip" data-direction="ltr">
                             <div class="packagefr__block-item">
@@ -455,9 +484,11 @@
 
 
                     <div class="col-md-4">
+<!--
                         <div class="packagefr__block-item">
                             Программа обучения и адаптации сотрудников
                         </div>
+-->
 
                         <div class="quest_tip" data-direction="ltr">
                             <div class="packagefr__block-item">
@@ -544,17 +575,17 @@
                             <br> маркетинга
                         </div>
                         <div class="progressfr__item">
-                            Рекламы
+                            Реклама
                             <br> и PR
                         </div>
                         <div class="progressfr__item">
-                            Разработки
+                            IT-разработка
                         </div>
                         <div class="progressfr__item">
                             СЕО
                         </div>
                         <div class="progressfr__item">
-                            Контента
+                            Контент
                         </div>
                     </div>
 
@@ -564,7 +595,7 @@
                             <br> отдел
                         </div>
                         <div class="progressfr__item">
-                            Сопровождения
+                            Сопровождение
                             <br> сделок
                         </div>
                         <div class="progressfr__item">
@@ -572,7 +603,7 @@
                             <br> споров
                         </div>
                         <div class="progressfr__item">
-                            Юридической
+                            Юридическая
                             <br> проверки бизнеса
                         </div>
                     </div>
@@ -594,10 +625,12 @@
                             HR
 
                         </div>
+<!--
                         <div class="progressfr__item">
                             Call-центр
                             <br> и секретариат
                         </div>
+-->
                     </div>
 
                     <div class="col-md-3">
@@ -766,146 +799,145 @@
         </div>
         <section id="cases" class="cases">
             <div class="container">
-                <div class="slider-item">
-                    <div id="slider2" class="owl-carousel carousel__office">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="cases__img">
-                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
+               <div class="slider-item">
+                <div id="slider2" class="owl-carousel carousel__office">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="cases__img">
+                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
+                                </div>
+                                <div class="cases__name">
+                                    Виталий Носачев
+                                    <br> франчази г. Уфа
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+
+                                <div class="cases__header">
+                                    <div class="cases__header-info">
+                                        <span class="cases__header-item">Уфа</span>
+                                        <span class="cases__header-item">с 2013 года</span>
+                                        <span class="cases__header-item">7 сотрудников</span>
+
                                     </div>
-                                    <div class="cases__name">
-                                        Виталий Носачев
-                                        <br> франчази г. Уфа
+
+                                    <div class="cases__header-summa">
+                                        Прибыль: 250 000 руб/мес
                                     </div>
                                 </div>
-                                <div class="col-md-9">
 
-                                    <div class="cases__header">
-                                        <div class="cases__header-info">
-                                            <span class="cases__header-item">Уфа</span>
-                                            <span class="cases__header-item">с 2013 года</span>
-                                            <span class="cases__header-item">7 сотрудников</span>
-
-                                        </div>
-
-                                        <div class="cases__header-summa">
-                                            Прибыль: 250 000 руб/мес
-                                        </div>
-                                    </div>
-
-                                    <p>Мы приобрели франшизу в августе 2014 года. Срок окупаемости конкретно в нашем слу- чае составил 6 месяцев. Изначально искали идею, которая немного опередит свое время, т.к. все мы знаем, что родоначальники той или иной сферы бизнеса в итоге оказыва- ются на вершине. Первый и самый важный вопрос, который мы недооценили: «Как найти хороших бизнес-брокеров?!». Со временем, конечно, нашли. Чему-то пришлось обучать- ся с нуля, но как без этого. Рынок готового бизнеса и франчайзинга открывает новые возможности, в том числе и начинающим предпринимателям, в первую очередь со- кращением рисков. Поэтому развитие и рост рынка - процесс необратимый, что и пока- зывает статистика последних лет. С каждым годом у нас всё больше интерес работы в данном сегменте, ведь нам в Альтере как никому известны темпы роста сферы.</p>
-
-                                </div>
+                                <p>Мы приобрели франшизу в августе 2014 года. Срок окупаемости конкретно в нашем слу- чае составил 6 месяцев. Изначально искали идею, которая немного опередит свое время, т.к. все мы знаем, что родоначальники той или иной сферы бизнеса в итоге оказыва- ются на вершине. Первый и самый важный вопрос, который мы недооценили: «Как найти хороших бизнес-брокеров?!». Со временем, конечно, нашли. Чему-то пришлось обучать- ся с нуля, но как без этого. Рынок готового бизнеса и франчайзинга открывает новые возможности, в том числе и начинающим предпринимателям, в первую очередь со- кращением рисков. Поэтому развитие и рост рынка - процесс необратимый, что и пока- зывает статистика последних лет. С каждым годом у нас всё больше интерес работы в данном сегменте, ведь нам в Альтере как никому известны темпы роста сферы.</p>
 
                             </div>
+
                         </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="cases__img">
-                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                    </div>
-                                    <div class="cases__name">
-                                        Айрат Закиров
-                                        <br> франчази г. Самара
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-
-                                    <div class="cases__header">
-                                        <div class="cases__header-info">
-                                            <span class="cases__header-item">Самара</span>
-                                            <span class="cases__header-item">с 2013 года</span>
-                                            <span class="cases__header-item">7 сотрудников</span>
-
-                                        </div>
-
-                                        <div class="cases__header-summa">
-                                            Прибыль: 250 000 руб/мес
-                                        </div>
-                                    </div>
-
-                                    <p>Мы открыли два представительства Альтеры Инвест, в Уфе - в сентябре 2014 года, и в Самаре - в декабре 2015. Идея покупки пришла спонтанно, стала интересна идея купли-продажи готового бизнеса, мы поверили в нее. Пообщались с Мак- симом Новицким, разговор оставил позитивное впечатление и решение было принято. Сложно было только в начале нашего пути, когда мы еще не понимал всей специфики этой работы, после стало легче и лучше, бизнес «пошел». Окупились мы примерно через полгода. Работать в сфере купли-продажи готового бизнеса очень инте- ресно, рынок живой и очень перспективный. Сам продукт, как инструмент инвестирования, либо развития бизнеса, становится все более попу- лярен и понятен для населения. Партнерство с Альтерой дает огромный опыт и удовольствие от сотрудничества. Я уверен, что мы движемся в правильном направлении! </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="cases__img">
-                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                    </div>
-                                    <div class="cases__name">
-                                       Олег Дулебенец
-                                        <br> франчази г. Казань
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-
-                                    <div class="cases__header">
-                                        <div class="cases__header-info">
-                                            <span class="cases__header-item">Казань</span>
-                                            <span class="cases__header-item">с 2013 года</span>
-                                            <span class="cases__header-item">7 сотрудников</span>
-
-                                        </div>
-
-                                        <div class="cases__header-summa">
-                                            Прибыль: 250 000 руб/мес
-                                        </div>
-                                    </div>
-
-                                    <p>Представительство Альтеры Инвест мы открыли в июне 2015 года. Я рассматривал исключительно сферу услуг, привлекателен был рынок недвижимости, однако, по моему мнению, он перегрет и находится в состоянии стагнации. Во время тщательных поисков случайно увидел франшизу Альтеры Инвест и сразу же откликнулся. Первое время воз- никали трудности с подбором сотрудников, тонкостями юриспруденции, пониманием сферы. Но все же ребята из Альтеры помог- ли разобраться, передав невероятно много опыта и полезной информации.</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="cases__img">
-                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                    </div>
-                                    <div class="cases__name">
-                                        Денис Анурьев
-                                        <br> франчази г. Тюмень
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-
-                                    <div class="cases__header">
-                                        <div class="cases__header-info">
-                                            <span class="cases__header-item">Тюмень</span>
-                                            <span class="cases__header-item">с 2013 года</span>
-                                            <span class="cases__header-item">7 сотрудников</span>
-
-                                        </div>
-
-                                        <div class="cases__header-summa">
-                                            Прибыль: 250 000 руб/мес
-                                        </div>
-                                    </div>
-
-                                    <p>Мы приобрели франшизу Альтеры Инвест сравнительно недавно - в январе 2016 года. Я увидел рыночную нишу, возникла идея рабо- тать в ней. Когда увидел, что компания-лидер в данной области продает франшизу, решил, что надо брать. Единственной проблемой стал кадровый вопрос - на рынке нет гото- вых специалистов, но это и стало возмож- ностью воспитать "своих" профессионалов. Наш интерес к работе крайне высокий, т.к. эта отрасль действительно имеет огромный потенциал.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="customNavigation">
-                        <a class="btn prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-                        <a class="btn next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="cases__img">
+                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
+                                </div>
+                                <div class="cases__name">
+                                    Айрат Закиров
+                                    <br> франчази г. Самара
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+
+                                <div class="cases__header">
+                                    <div class="cases__header-info">
+                                        <span class="cases__header-item">Самара</span>
+                                        <span class="cases__header-item">с 2013 года</span>
+                                        <span class="cases__header-item">7 сотрудников</span>
+
+                                    </div>
+
+                                    <div class="cases__header-summa">
+                                        Прибыль: 250 000 руб/мес
+                                    </div>
+                                </div>
+
+                                <p>Мы открыли два представительства Альтеры Инвест, в Уфе - в сентябре 2014 года, и в Самаре - в декабре 2015. Идея покупки пришла спонтанно, стала интересна идея купли-продажи готового бизнеса, мы поверили в нее. Пообщались с Мак- симом Новицким, разговор оставил позитивное впечатление и решение было принято. Сложно было только в начале нашего пути, когда мы еще не понимал всей специфики этой работы, после стало легче и лучше, бизнес «пошел». Окупились мы примерно через полгода. Работать в сфере купли-продажи готового бизнеса очень инте- ресно, рынок живой и очень перспективный. Сам продукт, как инструмент инвестирования, либо развития бизнеса, становится все более попу- лярен и понятен для населения. Партнерство с Альтерой дает огромный опыт и удовольствие от сотрудничества. Я уверен, что мы движемся в правильном направлении! </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="cases__img">
+                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
+                                </div>
+                                <div class="cases__name">
+                                    Олег Дулебенец
+                                    <br> франчази г. Казань
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+
+                                <div class="cases__header">
+                                    <div class="cases__header-info">
+                                        <span class="cases__header-item">Казань</span>
+                                        <span class="cases__header-item">с 2013 года</span>
+                                        <span class="cases__header-item">7 сотрудников</span>
+
+                                    </div>
+
+                                    <div class="cases__header-summa">
+                                        Прибыль: 250 000 руб/мес
+                                    </div>
+                                </div>
+
+                                <p>Представительство Альтеры Инвест мы открыли в июне 2015 года. Я рассматривал исключительно сферу услуг, привлекателен был рынок недвижимости, однако, по моему мнению, он перегрет и находится в состоянии стагнации. Во время тщательных поисков случайно увидел франшизу Альтеры Инвест и сразу же откликнулся. Первое время воз- никали трудности с подбором сотрудников, тонкостями юриспруденции, пониманием сферы. Но все же ребята из Альтеры помог- ли разобраться, передав невероятно много опыта и полезной информации.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="cases__img">
+                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
+                                </div>
+                                <div class="cases__name">
+                                    Денис Анурьев
+                                    <br> франчази г. Тюмень
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+
+                                <div class="cases__header">
+                                    <div class="cases__header-info">
+                                        <span class="cases__header-item">Тюмень</span>
+                                        <span class="cases__header-item">с 2013 года</span>
+                                        <span class="cases__header-item">7 сотрудников</span>
+
+                                    </div>
+
+                                    <div class="cases__header-summa">
+                                        Прибыль: 250 000 руб/мес
+                                    </div>
+                                </div>
+
+                                <p>Мы приобрели франшизу Альтеры Инвест сравнительно недавно - в январе 2016 года. Я увидел рыночную нишу, возникла идея рабо- тать в ней. Когда увидел, что компания-лидер в данной области продает франшизу, решил, что надо брать. Единственной проблемой стал кадровый вопрос - на рынке нет гото- вых специалистов, но это и стало возмож- ностью воспитать "своих" профессионалов. Наш интерес к работе крайне высокий, т.к. эта отрасль действительно имеет огромный потенциал.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                 
+                </div>
+   <div class="customNavigation">
+                        <a class="btn prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a class="btn next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-
 
 
             </div>
@@ -1220,8 +1252,8 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"> Франшиза купли и продажи готового бизнеса
-                    <br> «Альтера Инвест»
+                <div class="col-md-3 footer__name"> Франшиза купли и продажи готового бизнеса
+                   «Альтера Инвест»
 
                 </div>
                 <div class="col-md-3">
@@ -1235,8 +1267,8 @@
                     <a class="footer__tel" href="tel:88005557862">8 (800) 555-78-62</a>
                 </div>
                 <div class="col-md-3 text-right">2017
-                    <br> Все права
-                    <br> защищены
+                    Все права
+                    защищены
                 </div>
             </div>
         </div>
@@ -1244,7 +1276,7 @@
 
 
     <a href="#home" role="button" class="scrollTop">
-        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
     </a>
 </body>
 

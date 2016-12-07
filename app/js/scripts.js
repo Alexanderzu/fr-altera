@@ -4,11 +4,17 @@
 	//= parts/jquery.maskedinput.min.js
 	//= parts/fotorama.js
 	//= parts/bootstrap.min.js
+	//= parts/jquery-editable-select.min.js
 
 	$(document).ready(function () {
-        
-        
-           questionmytooltip();
+
+	    $(".submit_select").click(function () {
+	        //открыть модальное окно с id="myModal"
+	        $("#myModal").modal('show');
+	    });
+
+
+	    questionmytooltip();
 
 	    function questionmytooltip() {
 	        if ($('body > .mytooltip').length == 0) {
@@ -51,13 +57,15 @@
 	            $('body').off('mousemove');
 	        });
 	    };
-        
+
+	    $('#editable-select').editableSelect();
+
 
 	    $('.input--phone').mask("+7 (999) 999-99-99", {
 	        autoclear: false
 	    });
 
-	 
+
 
 
 	    $('.hamburger-menu').on('click', function () {
