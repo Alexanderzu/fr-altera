@@ -9861,6 +9861,11 @@ nav.navbar.show-color a {
   color: #3f404b;
 }
 
+nav.navbar.show-color a:hover {
+  -webkit-box-shadow: inset 0 -3px 0 0 #2b8bca;
+  box-shadow: inset 0 -3px 0 0 #2b8bca;
+}
+
 nav.navbar.show-color .navbar-home {
   visibility: visible;
   opacity: 1;
@@ -9995,9 +10000,9 @@ ul.navbar-nav > li > a {
 }
 
 ul.navbar-nav > li > a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: inset 0 -3px 0 0 #2b8bca;
-  box-shadow: inset 0 -3px 0 0 #2b8bca;
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: inset 0 -3px 0 0 #fff;
+  box-shadow: inset 0 -3px 0 0 #fff;
 }
 
 ul.navbar-nav > li > a:focus {
@@ -10036,14 +10041,14 @@ section {
 
 .section__header {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 26px;
   font-weight: 400;
   color: #333;
   text-align: center;
   line-height: 60px;
   letter-spacing: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .section__header_white {
@@ -10066,7 +10071,7 @@ section {
   right: 0;
   bottom: 0;
   display: block;
-  margin: 60px auto 0px;
+  margin: 30px auto 0px;
   width: 35px;
   height: 2px;
   background: #2b8bca;
@@ -10390,12 +10395,17 @@ section {
   opacity: 1;
 }
 
+.signature {
+  text-align: right;
+  line-height: 20px;
+  font-family: 'robotomedium';
+}
+
 .video {
   position: relative;
 }
 
 .video__bg {
-  background: #3f404b;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -10405,7 +10415,6 @@ section {
   width: 100%;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  opacity: 0.4;
 }
 
 .video__play {
@@ -10523,19 +10532,21 @@ use styles below to disable ugly selection .customNavigation a {
 
 #tm .tm__block {
   margin: 0 auto;
-  display: table;
+  text-align: center;
 }
 
 #tm .tm__logo {
-  float: left;
+  max-width: 300px;
 }
 
 #tm .tm__text {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 14px;
   display: inline-block;
+  position: relative;
+  top: -15px;
 }
 
 #costof {
@@ -10661,9 +10672,8 @@ use styles below to disable ugly selection .customNavigation a {
   border-radius: 5px;
 }
 
-#steps .step:before {
-  counter-increment: heading;
-  content: counter(heading);
+#steps .step.step_number:before {
+  content: "";
   position: absolute;
   width: 40px;
   height: 40px;
@@ -10678,8 +10688,80 @@ use styles below to disable ugly selection .customNavigation a {
   left: 0px;
 }
 
+#steps .step.step_number-1:before {
+  content: "1";
+}
+
+#steps .step.step_number-2:before {
+  content: "2";
+}
+
+#steps .step.step_number-3:before {
+  content: "3";
+}
+
+#steps .step.step_number-4:before {
+  content: "4";
+}
+
+#steps .step.step_number-5:before {
+  content: "5";
+}
+
+#steps .step.step_number-6:before {
+  content: "6";
+}
+
+#steps .step.step_number-7:before {
+  content: "7";
+}
+
+#steps .step_r:after {
+  font-family: 'FontAwesome';
+  content: "\f178";
+  color: #2b8bca;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  right: -15px;
+}
+
+#steps .step_l:after {
+  font-family: 'FontAwesome';
+  content: "\f177";
+  color: #2b8bca;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  right: -15px;
+}
+
+#steps .step_b:after {
+  font-family: 'FontAwesome';
+  content: "\f175";
+  color: #2b8bca;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  text-align: center;
+}
+
+#steps .step_t:after {
+  font-family: 'FontAwesome';
+  content: "\f175";
+  color: #2b8bca;
+  font-size: 30px;
+  position: absolute;
+  top: -45px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 #steps .col-md-4 {
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 #steps .col-md-4:last-child {
@@ -10755,6 +10837,14 @@ use styles below to disable ugly selection .customNavigation a {
   top: 35%;
 }
 
+.reviews .video__play::before,.reviews .video__play::after {
+  display: none;
+}
+
+.reviews .video__play:hover::before,.reviews .video__play:hover::after {
+  display: block;
+}
+
 .reviews--text {
   margin-bottom: 50px;
 }
@@ -10781,7 +10871,7 @@ use styles below to disable ugly selection .customNavigation a {
 
 .masha {
   position: relative;
-  bottom: -55px;
+  bottom: -102px;
   width: 230px;
   margin-top: -53px;
 }
@@ -10864,6 +10954,63 @@ a.btn.prev {
 .packagefr__block ul li {
   margin-bottom: 10px;
   margin-left: 20px;
+}
+
+.mytooltip_text {
+  display: none;
+}
+
+body > .mytooltip {
+  position: absolute;
+  display: none;
+  width: 225px;
+  padding: 15px 30px;
+  background: white;
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+  z-index: 99999;
+}
+
+body > .mytooltip li {
+  margin-bottom: 5px;
+}
+
+.quest_tip {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quest_tip_close {
+  color: #ccc;
+}
+
+.quest_tip_close:before {
+  font-family: 'FontAwesome';
+  content: "\f023";
+}
+
+.quest_tip_open {
+  color: #2b8bca;
+}
+
+.quest_tip_open:before {
+  font-family: 'FontAwesome';
+  content: "\f13e";
+}
+
+.quest_tip_open a {
+  text-decoration: none;
+  border-bottom: 2px dotted #2b8bca;
+}
+
+.quest_tip_open a:hover {
+  border: 0;
 }
 
 .fotorama__arr--prev {
@@ -12350,6 +12497,10 @@ button.close {
   }
 
   #progressfr .progressfr__block {
+    display: none;
+  }
+
+  #steps .step:after {
     display: none;
   }
 

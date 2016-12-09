@@ -319,15 +319,17 @@
 
 
                             <div class="selects">
-                                <select id="editable-select" required placeholder="Выберите город из списка">
-                                    <option>Город</option>
-                                    <option>Сказка</option>
-                                    <option>мечта</option>
-                                    <option>Земфира</option>
+                                <select data-container="options" id="editable-select"  required placeholder="Выберите город из списка">
+                                    <option value="1.xml">Город</option>
+                                    <option value="2.xml">Сказка</option>
+                                    <option value="3.xml">мечта</option>
+                                    <option value="4.xml">Земфира</option>
                                 </select>
 
                             </div>
-                            <input class="form__btn submit_select" type="submit" value="Оставить заявку">
+                            <div id="last-selected"></div>
+                            <a class="form__btn submit_select" href="">Скачать расчет</a>
+                       
 
                         </form>
                     </div>
@@ -368,165 +370,100 @@
             <div class="packagefr__block">
                 <div class="row">
                     <div class="col-md-4">
-<!--
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
 
-                        <div class="packagefr__block-item">Эксклюзивное представительство в городе открытия </div>
--->
+                        </span>
 
-                        <div class="quest_tip text_blue" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Кадровые стандарты
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Организационная структура</li>
-                                    <li>Поиск и отбор персонала</li>
-                                    <li>Кадровое делопроизводство</li>
-                                    <li>Управление персоналом</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="quest_tip text_blue" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Юридическое сопровождения сделок
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Шаблоны договоров и сопроводительных документов с Продавцом бизнеса</li>
-                                    <li>Шаблоны договоров и сопроводительных документов с Покупателем бизнеса </li>
-                                    <li>Перечень документов необходимых для оформления сделок и способы их получения </li>
-                                    <li>Шаблоны документов на оказание других услуг компании </li>
-                                    <li>Шаблоны договоров и сопроводительных документов по купле-продажи бизнеса</li>
-                                    <li>Инструкции по заполнению и оформлению договоров </li>
-                                    <li>Порядок расторжения сделок</li>
-                                    <li>Основные вопросы и ответы юридического характера </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Маркетинговая поддержка
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Реклама на самой большой площадке готового бизнеса и франшиз в России alterainvest.ru</li>
-                                    <li>Реклама на других федеральных и региональных интернет площадках</li>
-                                    <li>Правила написания продающих объявлений</li>
-                                    <li>E-mail – маркетинг</li>
-                                    <li>Требования к рассылке предложений по клиентской базе «Альтера Инвест»</li>
-                                    <li>SMM (социальныесети) продвижениеобъектов </li>
-                                    <li>Аналитика популярных категорий бизнеса </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
 
 
                     <div class="col-md-4">
-<!--
-                        <div class="packagefr__block-item">
-                            Стажировка Франчайзи с ТОП-менеджерами компании и лучшими Бизнес-брокерами
-                        </div>
--->
+                        <span class="quest_tip quest_tip_open" data-direction="ltr">
+                        	 <a href="">Кадровые стандарты</a>
+               
+                        </span>
 
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Стандарты помещения
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Требования к месторасположению </li>
-                                    <li>Технические требования к помещению </li>
-                                    <li>Требования к внешнему оформлению офиса </li>
-                                    <li>Требования к организации внутренних зон офиса</li>
-                                    <li>Требования к оснащению офиса </li>
-                                    <li>Рекомендации по условиям аренды</li>
-                                    <li>Проверка правоустанавливающих документов арендатора</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Корпоративный кодекс
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>График работы</li>
-                                    <li>Требования к внешнему виду </li>
-                                    <li>Лояльность сотрудника</li>
-                                    <li>Конфиденциальность </li>
-                                    <li>Схема оплаты труда </li>
-                                    <li>Вознаграждение за идеи</li>
-                                    <li>Нематериальная мотивация</li>
-                                    <li>Решение возникших в работе проблем</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Руководство по использованию фирменного стиля
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Использование логотипа </li>
-                                    <li>Цветовая палитра</li>
-                                    <li>Типографика</li>
-                                    <li>Полиграфические материалы </li>
-                                    <li>Наружная вывеска </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
 
 
                     <div class="col-md-4">
-<!--
-                        <div class="packagefr__block-item">
-                            Программа обучения и адаптации сотрудников
-                        </div>
--->
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
 
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Руководство по продажам услуг компании
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Общие стандарты по продаже готового бизнеса</li>
-                                    <li>Работа с покупателем готового бизнеса </li>
-                                    <li>Работа с продавцом готового бизнеса </li>
-                                    <li>Стандарты продажи услуг создания франшизы</li>
-                                    <li>Инструменты и способы продаж готовых франшиз</li>
-                                    <li>Методы продаж сопутствующих услуг </li>
-                                    <li>Способы эффективного ведения переговоров</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="quest_tip" data-direction="ltr">
-                            <div class="packagefr__block-item">
-                                Руководство по работе с CRM системой
-                            </div>
-                            <div class="mytooltip_text">
-                                <ul>
-                                    <li>Общий учебный курс по работе в программе</li>
-                                    <li>Инструкция по внесению данных </li>
-                                    <li>Возможности использования различных функций системы </li>
-                                    <li>Контроль работы сотрудников в системе</li>
-                                </ul>
-                            </div>
-                        </div>
-
+                        </span>
 
 
 
                     </div>
 
+                    <div class="col-md-4">
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
 
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <span class="quest_tip quest_tip_open" data-direction="ltr">
+                        	 <a href="">Кадровые стандарты</a>
+               
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <span class="quest_tip quest_tip_open" data-direction="ltr">
+                        	 <a href="">Кадровые стандарты</a>
+               
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <span class="quest_tip quest_tip_close" data-direction="ltr">
+                        	 Кадровые стандарты
+      <span class="mytooltip_text">
+      Информация будет доступна после покупки франшизы</span>
+
+                        </span>
+
+                    </div>
 
                 </div>
 
@@ -625,7 +562,7 @@
                             HR
 
                         </div>
-<!--
+                        <!--
                         <div class="progressfr__item">
                             Call-центр
                             <br> и секретариат
@@ -706,6 +643,9 @@
 
                         <li>Вы ищите безопасные инвестиции. Бизнес - это риск, и наша франшиза не является исключением. Мы не можем гарантировать Вам, что Вы станете прибыльными, но мы сделаем для этого все возможное.</li>
                     </ul>
+                    <p class="signature">Мария Кузнецова
+                        <br> Директор по развитию компании «АЛЬТЕРА ИНВЕСТ»
+                    </p>
                 </div>
                 <div class="col-md-4">
 
@@ -727,7 +667,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-1 step_r">
 
                         <p class="step__text">Подписываем договор коммерческой концессии и начинаем искать помещение</p>
 
@@ -735,7 +675,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-2 step_r">
 
                         <p class="step__text">Мы передаем вам франчайзи-бук и все инструкции по ведению бизнеса</p>
 
@@ -743,7 +683,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-3 step_b">
 
                         <p class="step__text">Мы передаем вам франчайзи-бук и все инструкции по ведению бизнеса</p>
 
@@ -754,23 +694,25 @@
 
 
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-6 step_l">
 
                         <p class="step__text">Открываемся для посетителей</p>
 
                     </div>
 
                 </div>
+
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-5 step_l">
 
                         <p class="step__text">Начинаем искать персонал и включаем рекламу</p>
 
                     </div>
 
                 </div>
+
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-4">
 
                         <p class="step__text">Вы с нашим тренером проходите первичные курсы для получения навыков работы</p>
 
@@ -778,8 +720,9 @@
 
                 </div>
 
+
                 <div class="col-md-4">
-                    <div class="step">
+                    <div class="step step_number step_number-7 step_t">
 
                         <p class="step__text">Проходи стажировку в центральном офисе Альтера Инвест</p>
 
@@ -799,141 +742,141 @@
         </div>
         <section id="cases" class="cases">
             <div class="container">
-               <div class="slider-item">
-                <div id="slider2" class="owl-carousel carousel__office">
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="cases__img">
-                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                </div>
-                                <div class="cases__name">
-                                    Виталий Носачев
-                                    <br> франчази г. Уфа
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-
-                                <div class="cases__header">
-                                    <div class="cases__header-info">
-                                        <span class="cases__header-item">Уфа</span>
-                                        <span class="cases__header-item">с 2013 года</span>
-                                        <span class="cases__header-item">7 сотрудников</span>
-
+                <div class="slider-item">
+                    <div id="slider2" class="owl-carousel carousel__office">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="cases__img">
+                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
                                     </div>
-
-                                    <div class="cases__header-summa">
-                                        Прибыль: 250 000 руб/мес
+                                    <div class="cases__name">
+                                        Виталий Носачев
+                                        <br> франчази г. Уфа
                                     </div>
                                 </div>
+                                <div class="col-md-9">
 
-                                <p>Мы приобрели франшизу в августе 2014 года. Срок окупаемости конкретно в нашем слу- чае составил 6 месяцев. Изначально искали идею, которая немного опередит свое время, т.к. все мы знаем, что родоначальники той или иной сферы бизнеса в итоге оказыва- ются на вершине. Первый и самый важный вопрос, который мы недооценили: «Как найти хороших бизнес-брокеров?!». Со временем, конечно, нашли. Чему-то пришлось обучать- ся с нуля, но как без этого. Рынок готового бизнеса и франчайзинга открывает новые возможности, в том числе и начинающим предпринимателям, в первую очередь со- кращением рисков. Поэтому развитие и рост рынка - процесс необратимый, что и пока- зывает статистика последних лет. С каждым годом у нас всё больше интерес работы в данном сегменте, ведь нам в Альтере как никому известны темпы роста сферы.</p>
+                                    <div class="cases__header">
+                                        <div class="cases__header-info">
+                                            <span class="cases__header-item">Уфа</span>
+                                            <span class="cases__header-item">с 2013 года</span>
+                                            <span class="cases__header-item">7 сотрудников</span>
+
+                                        </div>
+
+                                        <div class="cases__header-summa">
+                                            Прибыль: 250 000 руб/мес
+                                        </div>
+                                    </div>
+
+                                    <p>Мы приобрели франшизу в августе 2014 года. Срок окупаемости конкретно в нашем слу- чае составил 6 месяцев. Изначально искали идею, которая немного опередит свое время, т.к. все мы знаем, что родоначальники той или иной сферы бизнеса в итоге оказыва- ются на вершине. Первый и самый важный вопрос, который мы недооценили: «Как найти хороших бизнес-брокеров?!». Со временем, конечно, нашли. Чему-то пришлось обучать- ся с нуля, но как без этого. Рынок готового бизнеса и франчайзинга открывает новые возможности, в том числе и начинающим предпринимателям, в первую очередь со- кращением рисков. Поэтому развитие и рост рынка - процесс необратимый, что и пока- зывает статистика последних лет. С каждым годом у нас всё больше интерес работы в данном сегменте, ведь нам в Альтере как никому известны темпы роста сферы.</p>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="cases__img">
-                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                </div>
-                                <div class="cases__name">
-                                    Айрат Закиров
-                                    <br> франчази г. Самара
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-
-                                <div class="cases__header">
-                                    <div class="cases__header-info">
-                                        <span class="cases__header-item">Самара</span>
-                                        <span class="cases__header-item">с 2013 года</span>
-                                        <span class="cases__header-item">7 сотрудников</span>
-
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="cases__img">
+                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
                                     </div>
-
-                                    <div class="cases__header-summa">
-                                        Прибыль: 250 000 руб/мес
+                                    <div class="cases__name">
+                                        Айрат Закиров
+                                        <br> франчази г. Самара
                                     </div>
                                 </div>
+                                <div class="col-md-9">
 
-                                <p>Мы открыли два представительства Альтеры Инвест, в Уфе - в сентябре 2014 года, и в Самаре - в декабре 2015. Идея покупки пришла спонтанно, стала интересна идея купли-продажи готового бизнеса, мы поверили в нее. Пообщались с Мак- симом Новицким, разговор оставил позитивное впечатление и решение было принято. Сложно было только в начале нашего пути, когда мы еще не понимал всей специфики этой работы, после стало легче и лучше, бизнес «пошел». Окупились мы примерно через полгода. Работать в сфере купли-продажи готового бизнеса очень инте- ресно, рынок живой и очень перспективный. Сам продукт, как инструмент инвестирования, либо развития бизнеса, становится все более попу- лярен и понятен для населения. Партнерство с Альтерой дает огромный опыт и удовольствие от сотрудничества. Я уверен, что мы движемся в правильном направлении! </p>
+                                    <div class="cases__header">
+                                        <div class="cases__header-info">
+                                            <span class="cases__header-item">Самара</span>
+                                            <span class="cases__header-item">с 2013 года</span>
+                                            <span class="cases__header-item">7 сотрудников</span>
+
+                                        </div>
+
+                                        <div class="cases__header-summa">
+                                            Прибыль: 250 000 руб/мес
+                                        </div>
+                                    </div>
+
+                                    <p>Мы открыли два представительства Альтеры Инвест, в Уфе - в сентябре 2014 года, и в Самаре - в декабре 2015. Идея покупки пришла спонтанно, стала интересна идея купли-продажи готового бизнеса, мы поверили в нее. Пообщались с Мак- симом Новицким, разговор оставил позитивное впечатление и решение было принято. Сложно было только в начале нашего пути, когда мы еще не понимал всей специфики этой работы, после стало легче и лучше, бизнес «пошел». Окупились мы примерно через полгода. Работать в сфере купли-продажи готового бизнеса очень инте- ресно, рынок живой и очень перспективный. Сам продукт, как инструмент инвестирования, либо развития бизнеса, становится все более попу- лярен и понятен для населения. Партнерство с Альтерой дает огромный опыт и удовольствие от сотрудничества. Я уверен, что мы движемся в правильном направлении! </p>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="cases__img">
-                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                </div>
-                                <div class="cases__name">
-                                    Олег Дулебенец
-                                    <br> франчази г. Казань
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-
-                                <div class="cases__header">
-                                    <div class="cases__header-info">
-                                        <span class="cases__header-item">Казань</span>
-                                        <span class="cases__header-item">с 2013 года</span>
-                                        <span class="cases__header-item">7 сотрудников</span>
-
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="cases__img">
+                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
                                     </div>
-
-                                    <div class="cases__header-summa">
-                                        Прибыль: 250 000 руб/мес
+                                    <div class="cases__name">
+                                        Олег Дулебенец
+                                        <br> франчази г. Казань
                                     </div>
                                 </div>
+                                <div class="col-md-9">
 
-                                <p>Представительство Альтеры Инвест мы открыли в июне 2015 года. Я рассматривал исключительно сферу услуг, привлекателен был рынок недвижимости, однако, по моему мнению, он перегрет и находится в состоянии стагнации. Во время тщательных поисков случайно увидел франшизу Альтеры Инвест и сразу же откликнулся. Первое время воз- никали трудности с подбором сотрудников, тонкостями юриспруденции, пониманием сферы. Но все же ребята из Альтеры помог- ли разобраться, передав невероятно много опыта и полезной информации.</p>
+                                    <div class="cases__header">
+                                        <div class="cases__header-info">
+                                            <span class="cases__header-item">Казань</span>
+                                            <span class="cases__header-item">с 2013 года</span>
+                                            <span class="cases__header-item">7 сотрудников</span>
+
+                                        </div>
+
+                                        <div class="cases__header-summa">
+                                            Прибыль: 250 000 руб/мес
+                                        </div>
+                                    </div>
+
+                                    <p>Представительство Альтеры Инвест мы открыли в июне 2015 года. Я рассматривал исключительно сферу услуг, привлекателен был рынок недвижимости, однако, по моему мнению, он перегрет и находится в состоянии стагнации. Во время тщательных поисков случайно увидел франшизу Альтеры Инвест и сразу же откликнулся. Первое время воз- никали трудности с подбором сотрудников, тонкостями юриспруденции, пониманием сферы. Но все же ребята из Альтеры помог- ли разобраться, передав невероятно много опыта и полезной информации.</p>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="cases__img">
-                                    <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
-                                </div>
-                                <div class="cases__name">
-                                    Денис Анурьев
-                                    <br> франчази г. Тюмень
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-
-                                <div class="cases__header">
-                                    <div class="cases__header-info">
-                                        <span class="cases__header-item">Тюмень</span>
-                                        <span class="cases__header-item">с 2013 года</span>
-                                        <span class="cases__header-item">7 сотрудников</span>
-
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="cases__img">
+                                        <img class="cases__img-item" src="images/broker_a_KUF.png" alt="">
                                     </div>
-
-                                    <div class="cases__header-summa">
-                                        Прибыль: 250 000 руб/мес
+                                    <div class="cases__name">
+                                        Денис Анурьев
+                                        <br> франчази г. Тюмень
                                     </div>
                                 </div>
+                                <div class="col-md-9">
 
-                                <p>Мы приобрели франшизу Альтеры Инвест сравнительно недавно - в январе 2016 года. Я увидел рыночную нишу, возникла идея рабо- тать в ней. Когда увидел, что компания-лидер в данной области продает франшизу, решил, что надо брать. Единственной проблемой стал кадровый вопрос - на рынке нет гото- вых специалистов, но это и стало возмож- ностью воспитать "своих" профессионалов. Наш интерес к работе крайне высокий, т.к. эта отрасль действительно имеет огромный потенциал.
-                                </p>
+                                    <div class="cases__header">
+                                        <div class="cases__header-info">
+                                            <span class="cases__header-item">Тюмень</span>
+                                            <span class="cases__header-item">с 2013 года</span>
+                                            <span class="cases__header-item">7 сотрудников</span>
+
+                                        </div>
+
+                                        <div class="cases__header-summa">
+                                            Прибыль: 250 000 руб/мес
+                                        </div>
+                                    </div>
+
+                                    <p>Мы приобрели франшизу Альтеры Инвест сравнительно недавно - в январе 2016 года. Я увидел рыночную нишу, возникла идея рабо- тать в ней. Когда увидел, что компания-лидер в данной области продает франшизу, решил, что надо брать. Единственной проблемой стал кадровый вопрос - на рынке нет гото- вых специалистов, но это и стало возмож- ностью воспитать "своих" профессионалов. Наш интерес к работе крайне высокий, т.к. эта отрасль действительно имеет огромный потенциал.
+                                    </p>
+
+                                </div>
 
                             </div>
-
                         </div>
+
                     </div>
-                 
-                </div>
-   <div class="customNavigation">
+                    <div class="customNavigation">
                         <a class="btn prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                         <a class="btn next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
@@ -985,52 +928,6 @@
                 <h4>820 отзывов наших клиентов</h4>
             </div>
 
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="video">
-                        <a href="" data-fancybox-type="iframe" class="video__link colorvideobox cboxElement">
-                            <div class="video__bg">
-                                <img class="video__img" src="http://img.youtube.com/vi/dnsu46Bb01E/mqdefault.jpg" alt="">
-                            </div>
-                            <span class="video__play">
-                    <i class="glyphicon glyphicon-play"></i>
-                    </span>
-                        </a>
-
-                        <p class="video__text">Отзыв об «Альтера Инвест» от Альбины Романенко из отдела франчайзинга сети «BBClinic»</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="video">
-                        <a href="" data-fancybox-type="iframe" class="video__link colorvideobox cboxElement">
-                            <div class="video__bg">
-                                <img class="video__img" src="http://img.youtube.com/vi/dnsu46Bb01E/mqdefault.jpg" alt="">
-                            </div>
-                            <span class="video__play">
-                    <i class="glyphicon glyphicon-play"></i>
-                    </span>
-                        </a>
-                        <p class="video__text">Отзыв об «Альтера Инвест» от Альбины Романенко из отдела франчайзинга сети «BBClinic»</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="video">
-                        <a href="" data-fancybox-type="iframe" class="video__link colorvideobox cboxElement">
-                            <div class="video__bg">
-                                <img class="video__img" src="http://img.youtube.com/vi/dnsu46Bb01E/mqdefault.jpg" alt="">
-                            </div>
-                            <span class="video__play">
-                    <i class="glyphicon glyphicon-play"></i>
-                    </span>
-                        </a>
-
-                        <p class="video__text">Отзыв об «Альтера Инвест» от Альбины Романенко из отдела франчайзинга сети «BBClinic»</p>
-                    </div>
-                </div>
-            </div>
 
 
             <div class="row">
@@ -1252,8 +1149,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 footer__name"> Франшиза купли и продажи готового бизнеса
-                   «Альтера Инвест»
+                <div class="col-md-3 footer__name"> Франшиза купли и продажи готового бизнеса «Альтера Инвест»
 
                 </div>
                 <div class="col-md-3">
@@ -1266,9 +1162,7 @@
 
                     <a class="footer__tel" href="tel:88005557862">8 (800) 555-78-62</a>
                 </div>
-                <div class="col-md-3 text-right">2017
-                    Все права
-                    защищены
+                <div class="col-md-3 text-right">2017 Все права защищены
                 </div>
             </div>
         </div>

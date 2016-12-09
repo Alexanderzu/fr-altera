@@ -3,15 +3,31 @@
 	//= parts/owl.carousel.min.js
 	//= parts/jquery.maskedinput.min.js
 	//= parts/fotorama.js
-	//= parts/bootstrap.min.js
 	//= parts/jquery-editable-select.min.js
+	//= parts/bootstrap.min.js
+
 
 	$(document).ready(function () {
 
-	    $(".submit_select").click(function () {
-	        //открыть модальное окно с id="myModal"
-	        $("#myModal").modal('show');
+
+	    //	    var links = $('[data-container="links"] a');
+	    //	    $('[data-container="options"] option').on('click',function (index) {
+	    //	        links.eq(index).attr({
+	    //	            href: this.value
+	    //	        });
+	    //	    });
+
+
+	    $('#editable-select').editableSelect({
+	        effects: 'slide'
 	    });
+
+	    $('#editable-select')
+	        .editableSelect()
+	        .on('select.editable-select', function (e) {
+	            $('.submit_select').attr('href', $(this).val() + ".xml");
+	        });
+
 
 
 	    questionmytooltip();
