@@ -533,7 +533,7 @@
 	    $('#editable-select')
 	        .editableSelect()
 	        .on('select.editable-select', function (e) {
-	            $('.submit_select').attr('href', $(this).val() + ".xml");
+	            $('.submit_select').attr('href', $('.es-visible').attr("value"));
 	        });
 
 

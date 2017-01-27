@@ -5913,6 +5913,12 @@ body {
   opacity: 1;
 }
 
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #747474 !important;
+}
+
 p {
   margin-bottom: 10px;
   font-size: 16px;
@@ -10152,6 +10158,7 @@ section {
   transition: -webkit-transform 0.2s ease-in;
   transition: transform 0.2s ease-in;
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  padding-bottom: 7px;
 }
 
 .scrollTop:hover {
@@ -10176,6 +10183,7 @@ section {
 
 .scrollTop .fa {
   font-size: 30px;
+  line-height: 20px;
 }
 
 #home {
@@ -10555,7 +10563,6 @@ use styles below to disable ugly selection .customNavigation a {
   background-image: url("../images/bg-2.jpg");
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed;
 }
 
 #costof .costof__block {
@@ -10594,7 +10601,6 @@ use styles below to disable ugly selection .customNavigation a {
   background-image: url("../images/4.jpg");
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed;
 }
 
 #progressfr .section__header {
@@ -10666,8 +10672,8 @@ use styles below to disable ugly selection .customNavigation a {
 
 #steps .step {
   background-color: #f5f6f8;
-  padding: 40px 20px 20px 20px;
-  height: 150px;
+  padding: 25px 10px 10px 20px;
+  height: 120px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
@@ -10722,7 +10728,7 @@ use styles below to disable ugly selection .customNavigation a {
   color: #2b8bca;
   font-size: 30px;
   position: absolute;
-  top: 60px;
+  top: 38%;
   right: -15px;
 }
 
@@ -10732,7 +10738,7 @@ use styles below to disable ugly selection .customNavigation a {
   color: #2b8bca;
   font-size: 30px;
   position: absolute;
-  top: 60px;
+  top: 38%;
   right: -15px;
 }
 
@@ -10805,7 +10811,7 @@ use styles below to disable ugly selection .customNavigation a {
 
 .cases__header-item {
   border-right: 2px solid #e6e6e6;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .cases__header-item:last-child {
@@ -10822,11 +10828,14 @@ use styles below to disable ugly selection .customNavigation a {
   background-image: url("../images/3.jpg");
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed;
 }
 
 #consultation .consultation__block {
   background-color: rgba(63, 64, 75, 0.9);
+}
+
+#consultation input:-webkit-autofill,#consultation input:-webkit-autofill:hover,#consultation input:-webkit-autofill:focus,#consultation input:-webkit-autofill:active {
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 .reviews .video {
@@ -10982,7 +10991,7 @@ body > .mytooltip li {
 
 .quest_tip {
   display: block;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -11106,6 +11115,10 @@ button.close {
   position: absolute;
   left: 0;
   font-size: 0px;
+}
+
+#cboxOverlay {
+  opacity: 0.8 !important;
 }
 
 @font-face {
@@ -12452,7 +12465,7 @@ button.close {
   }
 
   .home--block {
-    padding-top: 10vh;
+    padding-top: 100px;
     height: auto;
   }
 

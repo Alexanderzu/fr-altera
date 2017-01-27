@@ -376,7 +376,8 @@ section
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2)
     +translate(0,80px)
     transition: transform 0.2s ease-in
-       
+    padding-bottom: 7px
+    
     &:hover
         color: $font-light
         opacity: 0.7 
@@ -391,6 +392,7 @@ section
     
     .fa
         font-size: 30px
+        line-height: 20px
 
 
 #home
@@ -415,7 +417,7 @@ section
             height: 100vh
         
         @media (max-width: 768px)
-            padding-top: 10vh
+            padding-top: 100px
             height: auto
             
         .max
@@ -776,7 +778,7 @@ use styles below to disable ugly selection .customNavigation a
         image: url('../images/bg-2.jpg')
         size: cover
         position: center bottom
-        attachment: fixed
+        
     .costof
         &__block
             background-color: rgba(63, 64, 75, 0.9)
@@ -823,7 +825,7 @@ use styles below to disable ugly selection .customNavigation a
         image: url('../images/4.jpg')
         size: cover
         position: center bottom
-        attachment: fixed
+        
         
     .section__header
         margin-bottom: 0px
@@ -887,8 +889,8 @@ use styles below to disable ugly selection .customNavigation a
 #steps
     .step
         background-color: #f5f6f8
-        padding: 40px 20px 20px 20px 
-        height: 150px
+        padding: 25px 10px 10px 20px
+        height: 120px
         border-radius: 5px
         &.step_number
             &:before
@@ -935,7 +937,7 @@ use styles below to disable ugly selection .customNavigation a
                 color: #2b8bca
                 font-size: 30px
                 position: absolute
-                top: 60px
+                top: 38%
                 right: -15px
         &_l
             &:after
@@ -944,7 +946,7 @@ use styles below to disable ugly selection .customNavigation a
                 color: #2b8bca
                 font-size: 30px
                 position: absolute
-                top: 60px
+                top: 38%
                 right: -15px
                 
 
@@ -1009,7 +1011,7 @@ use styles below to disable ugly selection .customNavigation a
         
         &-item
             border-right: 2px solid #e6e6e6
-            padding-right: 5px
+            padding-right: 10px
             &:last-child
                 border: 0
             
@@ -1024,11 +1026,17 @@ use styles below to disable ugly selection .customNavigation a
         image: url('../images/3.jpg')
         size: cover
         position: center bottom
-        attachment: fixed
+        
         
     .consultation
         &__block
             background-color: rgba(63, 64, 75, 0.9)
+            
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active 
+        -webkit-text-fill-color: #ffffff !important
             
         
 .reviews
@@ -1174,7 +1182,7 @@ body>.mytooltip
         
 .quest_tip
     display: block
-    text-align: center
+    text-align: left
     margin-bottom: 30px
     &_close
         color: #ccc
@@ -1279,6 +1287,9 @@ ul
     left: 0
     font-size: 0px
 
+#cboxOverlay
+    opacity: 0.8 !important
+    
 //.fotorama__stage.fotorama__pointer,.fotorama__stage
 //    width: 350px !important
 //    float: left
